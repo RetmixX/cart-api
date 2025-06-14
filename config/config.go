@@ -6,7 +6,7 @@ import (
 )
 
 type AppConf struct {
-	ServerPort int    `env:"SERVER_PORT" env-required:"true"`
+	ServerPort string `env:"SERVER_PORT" env-required:"true"`
 	ServerMode string `env:"SERVER_MODE" env-default:"local"`
 	DBConf     DbConf
 }
